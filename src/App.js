@@ -10,7 +10,7 @@ export default function App()
       <Header />
 
       <Switch>
-        <Route path="/destination" exact>
+        <Route path="/home" exact>
           <Home />
         </Route>
         <Route path="/destination">

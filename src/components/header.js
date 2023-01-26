@@ -16,7 +16,7 @@ export default function header()
         <>
             <header className="header flex items-center justify-between w-full lg:flex-row">
                 <div>
-                    <Link to="/">
+                    <Link to="/destination">
                     <img src={logo} alt="Logo space" title="Space Travel" />
                     </Link>
                 </div>
@@ -27,7 +27,7 @@ export default function header()
                             <Link to="/" className="lg:text-white lg:flex lg:items-center"><span className="lg:text-l lg:font-bold mr-2">00</span> Home</Link>
                         </li>
                         <li className="list-item">
-                            <Link to="/destination" className="lg:text-white lg:flex lg:items-center"><span className="lg:text-l lg:font-bold mr-2">01</span>{" "}Destination{" "}</Link>
+                            <Link to="/destination" className="lg:text-white lg:flex lg:items-center"><span className="lg:text-l lg:font-bold mr-2">01</span>Destination</Link>
                         </li>
                         <li className="list-item">
                             <Link to="/" className="lg:text-white lg:flex lg:items-center"><span className="lg:text-l lg:font-bold mr-2">02</span> Crew</Link>

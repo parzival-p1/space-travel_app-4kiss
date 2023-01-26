@@ -10,16 +10,16 @@ export default function App()
       <Header />
 
       <Switch>
-        <Route path="/home" exact>
+        <Route path="/destination" exact>
           <Home />
         </Route>
         <Route path="/destination">
           <Destination />
         </Route>
-        <Route path="/crew">
+        <Route path="/destination">
           <Crew />
         </Route>
-        <Route path="/technology">
+        <Route path="/destination">
           <Technology /> 
         </Route>
       </Switch> 

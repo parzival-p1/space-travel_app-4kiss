@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  font-family: "Mohave", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 18px;
+}
+
+h1,
+h2 {
+  font-family: "Zen Antique", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+button,
+img {
+  user-select: none;
+}
+
+p {
+  line-height: 1.8;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;
+}
+
+.header .navbar {
+  position: absolute;
+  /* background-color: rgba(255, 255, 255, 0.5); */
+  background: hsl(0, 0%, 100%  0.1);
+  backdrop-filter: blur(0.5rem);
+  color: azure;
+  width: calc(100vw - 100px);
+  top: -10000%;
+  padding: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  transition: top 0.5s ease-in-out;
+}
+
+.header .navbar.open {
+  top: calc(90px - 10px);
+}
+
+.header .navbar ul li {
+  margin: 40px 0;
+}
+
+.home {
+  background: url("./root-code/assets/home/background-home-mobile.jpg") no-repeat center/cover;
+  height: calc(160vh + 1px);
+}
+
+.home .overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(160vh + 1px);
+  text-align: center;
+}
+
+.destination {
+  background: url("./root-code/assets/destination/background-destination-desktop.jpg") 
+  no-repeat center/cover;
+}
+
+@media (min-width: 768px) 
+{
+  .home {
+  background: url("./root-code/assets/home/background-home-tablet.jpg") no-repeat center/cover;
+  }
+
+  .destination {
+    background: url("./root-code/assets/destination/background-destination-tablet.jpg") no-repeat center/cover;
+  }
+}
+
+@media (min-width: 1024px) 
+{
+  .header .navbar 
+  {
+    position: relative;
+/*     background-color: rgba(255, 255, 255, 0.5); */
+    color: white;
+    top: 0%;
+    left: 0px;
+    width: auto;
+    transform: translateX(-1px);
+    /* background: hsl(0, 0%, 100%  0.1); */
+    backdrop-filter: blur(4px);
+    --webkit-backdrop-filter: blur(4px)
+  }
+
+  .header .navbar ul {
+    display: flex;
+  }
+
+  .header .navbar ul li {
+    margin: 0 40px;
+  }
+
+  .home {
+    background: url("./root-code/assets/home/background-home-desktop.jpg") no-repeat center/cover;
+  }
+
+  .home .overlay {
+    flex-direction: row;
+    text-align: left;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  .destination {
+    background: url("./root-code/assets/destination/background-destination-desktop.jpg") no-repeat center/cover;
+  }
+}
